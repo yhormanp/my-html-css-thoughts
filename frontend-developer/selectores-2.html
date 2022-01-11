@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document </title>
+    <style> 
+        div p {
+            color:  lime;
+        }
+
+        div > div {
+          background: plum;
+        }
+        .es {
+          background: reds;
+        }
+        div + section{
+          background: grey;
+        }
+
+        div ~ p{
+          color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Lorem Ipsum</p>
+      
+      <p>Platzi </p>
+      <div>es</div>
+      <p class="es">Increible </p>
+    </div>
+    <section>hola mundo soy un section</section>
+    <section>hola mundo soy otro section que no sufrió cambios por el selecto div + section</section>
+    <p>soy un p hermano del div que sufre cambios por div ~ p</p>
+    <p>soy un p hermano del div que sufre cambios por div ~ p</p>
+
+  </body>
+</html>

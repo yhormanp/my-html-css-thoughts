@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    article {
+      display: flex;
+      justify-content: center;
+    }
+    .main-container {
+      position: relative;
+      width: 400px;
+      height: 500px;
+      background: lightgray;
+      border: 1px solid;
+      border-radius: 10px;
+      overflow: hidden;
+
+      display: flex;
+      justify-content: center;
+    }
+    .main-container > img {
+      position: absolute;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    /* .personal-photo {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 100%;
+      overflow: hidden;
+    }
+    .personal-photo img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      top: 0px;
+      
+    }
+    .dev{
+        width: 140px;
+        height: 140px;
+    } */
+
+    .inner-container {
+      width: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      top: 130px;
+    }
+
+    .developer {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 10px;
+    }
+    .developer > img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+    }
+    .text {
+      font-size: 24px;
+      color: white;
+    }
+    .followers {
+      width: 100%;
+      height: 60px;
+      z-index: 3;
+      display: flex;
+      justify-content: space-between;
+      
+    }
+
+    .box {
+      width: 49%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: lightsteelblue;
+    }
+    .footer{
+      width: 90%;
+      /* background-color: red; */
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      background-color: lightsteelblue;
+      align-items: center;margin-top: 15px;
+    }
+  </style>
+  <body>
+    <article>
+      <div class="main-container">
+        <img
+          src="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?cs=srgb&dl=pexels-negative-space-169573.jpg&fm=jpg"
+          alt="photo"
+        />
+        <div class="inner-container">
+          <span class="text"> fullstack developer</span>
+          <div class="developer">
+            <img
+              src="https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?cs=srgb&dl=pexels-mentatdgt-937481.jpg&fm=jpg"
+              alt="personal photo"
+            />
+          </div>
+
+          <span class="text"> Colombia</span>
+          <div class="followers">
+            <div class="box">
+              <span>8,000</span>
+              <span>Followers</span>
+            </div>
+            <div class="box">
+              <span>8,000</span>
+              <span>Following</span>
+            </div>
+          </div>
+          <div class="footer">
+            <span class="text mockButton">Follow me</span>
+            <!-- <button> Follow me </button> -->
+          </div>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
